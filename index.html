@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="МЕГА БОЛЬШОЙ ПРОЕКТ ПО HTML">
+    <meta name="author" content="PROTON">
+    <title>МЕГА HTML</title>
+</head>
+<body>
+
+    <!-- Навигация -->
+     <nav>
+        <a href="#about">О нас</a>
+        <a href="#form">Форма регистрации</a>
+        <a href="table">Список Участников</a>
+        <a href="faq">Вопросы и ответы</a>
+     </nav>
+
+     <hr>
+
+     <!-- Заголовки -->
+    <h1 id="about">Добро пожаловать на наш сайт!</h1>
+    <p><strong>Это большой HTML-проект</strong>, в которм используются <em>все базовые теги HTML</em> без CSS.</p>
+
+    <h2>Содержимое страницы</h2>
+    <ul>
+        <li>Форма регистрации</li>
+        <li>Таблица участников</li>
+        <li>Информация о проекте</li>
+        <li>Вопросы и ответы</li>
+    </ul>
+
+    <!-- Изображение и ссылка -->
+     <h2>Логотип проекта</h2>
+     <a href="https://github.com/DimaProton" target="_blank">
+        <img src="images/logo.jpg" alt="Логотип проекта">
+     </a>
+
+     <hr>
+
+     <!-- Форма -->
+    <h2 id="form">Форма регистрации</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Личные данные</legend>
+            
+            <label>Имя:
+                <input type="name" name="firstname" placeholder="Введите имя" required>
+            </label><br><br>
+
+            <label>Фамилия:
+                <input type="name" name="lastname" placeholder="Введите фамилию" required>
+            </label><br><br>
+
+            <label>Email:
+                <input type="email" name="email" placeholder="example@mail.com" required>
+            </label><br><br>
+
+            <label>Пароль:
+                <input type="password" name="password" placeholder="Введите пароль" required>
+            </label><br><br>
+
+            <label>Дата рождения:
+                <input type="date" name="birthdate">
+            </label><br><br>
+
+            <label>Пол:<br>
+                <input type="radio" name="gender" value="male"> Мужской<br>
+                <input type="radio" name="gender" value="female"> Женский
+            </label><br><br>
+
+            <label>Страны:
+                <select name="country" required>
+                    <option value="" disabled selected>Выберите страну</option>
+                    <option value="am">Армения</option>
+                    <option value="il">Израиль</option>
+                    <option value="es">Испания</option>
+                    <option value="grc">Греция</option>
+                </select>
+            </label><br><br>
+
+            <label>О себе:<br>
+                <textarea name="about" rows="4" cols="40" placeholder="Раскажите немного о себе..."></textarea>
+            </label><br><br>
+
+            <label>
+                <input type="checkbox" name="agree" required> Я согласен с условиями 
+            </label><br><br>
+
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <!-- Таблица -->
+    <h2 id="table">Список участников:</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Sex</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Коля Гайдук</td>
+                <td>омвfdkjvh@amail.com</td>
+                <td>Франция</td>
+                <td>Мужчина</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Рома Литвиненко</td>
+                <td>romka@amail.com</td>
+                <td>Польша</td>
+                <td>Мужчина</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Всего участников: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <!-- Раздел вопросов -->
+     <h2 id="faq">Вопросы и ответы</h2>
+     <details>
+        <summary>Для чего нужен этот сайт?</summary>
+        <p>Чтобы показать, как можно сделать большой проект на чистом HTML без CSS и JavaScript.</p>
+     </details>
+     <details>
+        <summary>Можно ли добавлять стили?</summary>
+        <p>Да, но в этом проекте мы намеренно не используем CSS, чтобы сосредоточиться на HTML.</p>
+     </details>
+     <details>
+        <summary>Как отправляются данные формы?</summary>
+        <p>С помощью атрибутов <code>action</code> и <code>method</code> в теге &lt;form&gt;.</p>
+     </details>
+
+     <hr>
+
+     <!-- Контактная информация -->
+    <address>
+        Свяжитесь с нами: <a href="nikaanedeonika@mail.com">info@email.com</a>
+    </address>
+
+    <footer>
+        <p>&copy; 2025 HTML-проект. Все права защищены.</p>
+    </footer>
+    
+</body>
+</html>
